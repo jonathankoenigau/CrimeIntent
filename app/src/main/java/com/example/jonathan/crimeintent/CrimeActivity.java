@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 public class CrimeActivity extends SingleFragmentActivity {
 
+    // Activity used to create the crime input fragment
     @Override
     protected Fragment createFragment() {
         return new CrimeFragment();

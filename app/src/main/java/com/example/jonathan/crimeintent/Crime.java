@@ -6,6 +6,7 @@ import java.util.UUID;
 public class Crime {
 
     private UUID mID;
+    // Various information about the crime
     private String mTitle;
     private Date mDate;
     private boolean mSolved;

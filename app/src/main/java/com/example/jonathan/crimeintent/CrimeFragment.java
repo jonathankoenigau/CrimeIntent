@@ -15,7 +15,9 @@ import android.widget.EditText;
 
 public class CrimeFragment extends Fragment {
 
+    // Variable to hold the crime
     private Crime mCrime;
+    // Fields to set the info for the crime
     private EditText mTitleField;
     private Button mDateButton;
     private CheckBox mSolvedCheckbox;
@@ -36,7 +38,7 @@ public class CrimeFragment extends Fragment {
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
-
+            // Update the crime's title when the text is changed
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mCrime.setTitle(s.toString());

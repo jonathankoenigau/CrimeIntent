@@ -6,11 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+// Sets up the ArrayList of crimes that are given to the crime adapter
 public class CrimeLab {
     private static CrimeLab sCrimeLab;
 
     private List<Crime> mCrimes;
 
+    // Can only be initialized once, which means CrimeLab is a singleton
     public static CrimeLab get(Context context) {
         if(sCrimeLab == null) {
             sCrimeLab = new CrimeLab(context);

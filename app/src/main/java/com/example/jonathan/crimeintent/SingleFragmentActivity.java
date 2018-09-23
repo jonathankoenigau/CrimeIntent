@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
+// Generic class to create a fragment
 public abstract class SingleFragmentActivity extends AppCompatActivity{
 
     protected abstract Fragment createFragment();
